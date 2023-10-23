@@ -173,17 +173,19 @@
       <!-------------contact section desing..........-->
       <section class="Contact" id="Contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
-        <form action="#" onsubmit="sendEmail(); reset(); return false;">
+        <form action=""https://formsubmit.co/princekr1792001@gmail.com" method="POST"">
           <div class="input-box">
-            <input type="text" placeholder="Full name " id="name">
+            <input type="text" placeholder="Full name " id="name" name="name" required>
             <input type="email" placeholder="Email address" id="email">
          </div>
          <div class="input-box">
-          <input type="number" placeholder="Moblile number" id="mobile">
-          <input type="text" placeholder="Email subject" id="subject">
+          <input type="number" placeholder="Moblile number" id="mobile" name="mobile" required>
+          <input type="text" placeholder="Email subject" id="subject" name="email" required>
        </div>
-       <textarea name="" id="message" cols="30" rows="10" placeholder="Your messege" ></textarea>
+       <textarea name="" id="message" cols="30" rows="10" placeholder="Your messege" name="Message" ></textarea>
        <input type="submit" value="Send" class="btn">
+        <input type="hidden" name="_next" value="thankyou.html">
+        <input type="hidden" name="_template" value="table">
         </form>
       </section>
       <!-----footer design------------->
